@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>Visiting Destinations</title>
+   
+    <style>
+
+      img {
+        display: block;
+        margin: 0 auto; 
+      }
+     
+    </style>
+   
+  </head>
+  
+  <body>
+
+    <h1>Vacation Spots</h1>
+
+    <h2>Alaska</h2>
+    <h3>Other locations</h3>
+    <a href="japan.html">Japan</a>
+    <a href="philippines.html">Philippines</a>
+
+    <h3>Cold but some really great views and not many people wandering around</h3>
+    
+    <img src="http://www.stdavidschurch.org/filerequest/3486" width="400" id="cold">
+    
+    <h2>Other popular locations</h2>
+    <ul>
+      <li>Europ</li>
+      <li>Disnyland</li>
+    </ul>
+
+    <button>Add</button>
+
+    Location: <input type="text" id="location"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <script>
+      
+      $('button').on('click', function() {
+        var myLocations =$('#location').val();
+        
+        var item = '<li>' + myLocations + '</li>';
+
+        $('ul').append(item);
+      });
+      
+    </script>
+
+  </body>
+</html>
